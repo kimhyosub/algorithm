@@ -5,7 +5,7 @@ public class BubbleSort {
     public void sort(int[] numbers) {
     	int n = numbers.length;
     	for (int i : numbers) {
-    		for(int j=1; j < n; j++) {
+			for(int j=1; j < n; j++) {
     			if(numbers[j-1] > numbers[j]) {
     				swap(numbers, j-1, j);
     			}
