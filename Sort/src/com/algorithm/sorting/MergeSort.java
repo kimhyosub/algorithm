@@ -7,12 +7,11 @@ public class MergeSort {
 	    if(numbers.length > 1) {
 	    	int arrLength = numbers.length;
 	    	
-	    	// 배열을 절반으로 쪼개서 복사
 	    	int[] leftArr = new int[arrLength/2];
-	    	copyArr(numbers, leftArr, 0, leftArr.length);
+	    	System.arraycopy(numbers, 0, leftArr, 0, leftArr.length);
 	    	
 	    	int[] rightArr = new int[arrLength - arrLength/2];
-	    	copyArr(numbers, rightArr, leftArr.length, rightArr.length);
+	    	System.arraycopy(numbers, leftArr.length, rightArr, 0, rightArr.length);
 	    	
 	    	sort(leftArr);
 	    	sort(rightArr);
@@ -45,14 +44,4 @@ public class MergeSort {
 	    	}
 	    }
 	}
-	
-	// 배열 복사
-	public void copyArr(int[] oriArr, int[] defArr, int start, int end) {
-		
-		for(int i = 0 ; i < end ; i++){ 
-			defArr[i] = oriArr[i+start]; 
-		}
-	}
-	
-	
 }
