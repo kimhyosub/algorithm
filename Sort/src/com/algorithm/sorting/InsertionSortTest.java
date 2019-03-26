@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class InsertionSortTest {
 
-	private BubbleSort sorter = new BubbleSort();
+	private InsertionSort sorter = new InsertionSort();
 	 
     @Test
     public void shouldDoNothingWithEmptyArray() {

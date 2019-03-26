@@ -6,7 +6,7 @@ import static org.junit.Assert.assertArrayEquals;
  
 public class SelectionSortTest {
  
-    private BubbleSort sorter = new BubbleSort();
+    private SelectionSort sorter = new SelectionSort();
  
     @Test
     public void shouldDoNothingWithEmptyArray() {

@@ -13,7 +13,6 @@ public class SelectionSort {
 				if(numbers[j+i] < minimunVal) {
 					minimunVal = numbers[j+i];
 					minimunPoint = j+i;
-					System.out.println("minimunval : " + minimunVal);
 				}
 			}
 			swap(numbers, i, minimunPoint);
